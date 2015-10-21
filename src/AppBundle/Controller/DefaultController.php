@@ -13,7 +13,7 @@ class DefaultController extends Controller
      */
     public function indexAction(Request $request)
     {
-        $this->get('database_connection')->query('SELECT * FROM blog');
+        $this->get('database_connection')->query('SELECT * FROM posts');
 
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', array(
